@@ -36,6 +36,6 @@ class User(db.Model):
  
 @app.cli.command()  
 def init_db():
-    db.drop_all
+    # db.drop_all()
     db.create_all()
     lg.warning('Database initialized!')
